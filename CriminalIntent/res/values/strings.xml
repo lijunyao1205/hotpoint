@@ -11,5 +11,19 @@
     <string name="crimes_title">陋习列表</string>
     <string name="crime_date_hint">陋习发生日期</string>
     <string name="date_picker_title">Date of Crime:</string>
+    <string name="time_picker_title">Time of Crime:</string>
+    
+    <string name="choose_crime_date_change_title">陋习发生日期修改</string>
+    <string name="choose_date_time_title">请选择修改项:</string>
+    <string name="choose_date_title">日期:</string>
+    <string name="choose_time_title">时间:</string>
+    
+    <string name="new_crime">New Crime</string>
+    <string name="show_subtitle">show subtitile</string>
+    <string name="hide_subtitle">hide subtitile</string>
+    <string name="subtitle">if you see something,say something</string>
+    <string name="delete_crime">Delete</string>
+    <string name="empty_crime_content">no crime to display</string>
+    
 
 </resources>

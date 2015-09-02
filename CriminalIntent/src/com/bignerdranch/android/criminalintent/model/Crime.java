@@ -6,6 +6,11 @@ package com.bignerdranch.android.criminalintent.model;
 import java.util.Date;
 import java.util.UUID;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.util.JsonReader;
+
 /**
  * 陋习模型类
  * 
@@ -14,6 +19,10 @@ import java.util.UUID;
  */
 public class Crime {
 
+	private static final String JSON_ID = "id";
+	private static final String JSON_TITLE = "title";
+	private static final String JSON_DATE = "date";
+	private static final String JSON_SOVED = "soved";
 	private UUID mId;
 	private String mTitle;
 	private Date mDate;
@@ -22,6 +31,15 @@ public class Crime {
 	public Crime() {
 		mId = UUID.randomUUID();
 		mDate = new Date();
+	}
+	
+	public Crime(JSONObject json) throws JSONException{
+		mId = UUID.fromString(json.getString(JSON_ID));
+		if(json.has(JSON_TITLE)){
+			mTitle = json.getString(JSON_TITLE);
+		}
+		mDate = new Date(json.getLong(JSON_DATE));
+		mSoved = json.getBoolean(JSON_SOVED);
 	}
 
 	public String getTitle() {
@@ -55,6 +73,19 @@ public class Crime {
 	@Override
 	public String toString(){
 		return mTitle;
+	}
+	
+	public JSONObject toJson(){
+		JSONObject json = new JSONObject();
+		try {
+			json.put(JSON_ID, mId.toString());
+			json.put(JSON_TITLE, mTitle);
+			json.put(JSON_DATE, mDate.getTime());//
+			json.put(JSON_SOVED, mSoved);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return json;
 	}
 
 }

@@ -1,0 +1,87 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=5476, tid=5468
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00539800):  JavaThread "Unknown thread" [_thread_in_vm, id=5468, stack(0x02340000,0x02390000)]
+
+Stack: [0x02340000,0x02390000]
+
+[error occurred during error reporting (printing native stack), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00539800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5468, stack(0x02340000,0x02390000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Java\jdk1.6.0_10\bin\javaw.exe
+0x77860000 - 0x779e0000 	C:\windows\SysWOW64\ntdll.dll
+0x752f0000 - 0x753f0000 	C:\windows\syswow64\kernel32.dll
+0x758a0000 - 0x758e6000 	C:\windows\syswow64\KERNELBASE.dll
+0x75770000 - 0x75810000 	C:\windows\syswow64\ADVAPI32.dll
+0x76ae0000 - 0x76b8c000 	C:\windows\syswow64\msvcrt.dll
+0x76c10000 - 0x76c29000 	C:\windows\SysWOW64\sechost.dll
+0x750e0000 - 0x751d0000 	C:\windows\syswow64\RPCRT4.dll
+0x74f40000 - 0x74fa0000 	C:\windows\syswow64\SspiCli.dll
+0x74f30000 - 0x74f3c000 	C:\windows\syswow64\CRYPTBASE.dll
+0x766b0000 - 0x767b0000 	C:\windows\syswow64\USER32.dll
+0x75810000 - 0x758a0000 	C:\windows\syswow64\GDI32.dll
+0x759e0000 - 0x759ea000 	C:\windows\syswow64\LPK.dll
+0x76c30000 - 0x76ccd000 	C:\windows\syswow64\USP10.dll
+0x771e0000 - 0x77240000 	C:\windows\system32\IMM32.DLL
+0x75220000 - 0x752ec000 	C:\windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Java\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	D:\Java\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x76a40000 - 0x76a72000 	C:\windows\syswow64\WINMM.dll
+0x728e0000 - 0x7292b000 	C:\windows\system32\apphelp.dll
+0x6d330000 - 0x6d338000 	D:\Java\jdk1.6.0_10\jre\bin\hpi.dll
+0x77830000 - 0x77835000 	C:\windows\syswow64\PSAPI.DLL
+0x6d860000 - 0x6d86c000 	D:\Java\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	D:\Java\jdk1.6.0_10\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	D:\Java\jdk1.6.0_10\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\adt-bundle-windows-x86-20140321\adt-bundle-windows-x86-20140321\sdk\platforms\android-19\android.jar 
+java_command: com.bignerdranch.android.criminalintent.util.DateUtils
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\jdk1.8.0_45
+CLASSPATH=.;D:\jdk1.8.0_45\lib;D:\jdk1.8.0_45\lib\tools.jar
+PATH=D:/jdk1.8.0_45/bin/../jre/bin/client;D:/jdk1.8.0_45/bin/../jre/bin;D:/jdk1.8.0_45/bin/../jre/lib/i386;D:\jdk1.8.0_45\bin;D:\maven3.2.1\bin;;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;D:\Program Files\TortoiseSVN64\bin;d:\Program Files (x86)\Instantclient;d:\Program Files (x86)\Instantclient\bin;d:\Program Files (x86)\Instantclient;d:\Program Files (x86)\Instantclient\bin;D:\adt-bundle-windows-x86-20140321\adt-bundle-windows-x86-20140321\sdk\platform-tools;D:\adt-bundle-windows-x86-20140321\adt-bundle-windows-x86-20140321\sdk\tools;D:\ant1.9.5\bin;D:\Program Files\TortoiseGit\bin;D:\adt-bundle-windows-x86-20140321\adt-bundle-windows-x86-20140321\eclipse;
+USERNAME=keily
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 5 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 4051460k(1977688k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Wed Jul 29 21:09:48 2015
+elapsed time: 0 seconds
+
