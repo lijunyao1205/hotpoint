@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_date_time_title"
+        android:layout_marginLeft="10dp"/>
+    <RadioGroup android:id="@+id/choose_date_time_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/choose_date_time_title"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/choose_date_radio"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_date_title"/>
+        <RadioButton android:id="@+id/choose_time_radio"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_time_title"/>
+    </RadioGroup>
+    
+
+</LinearLayout>
