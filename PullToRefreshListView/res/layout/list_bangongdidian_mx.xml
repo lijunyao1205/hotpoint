@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp" 
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/bangongdidian_textview_mc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="办公地点名称"
+        android:textIsSelectable="false" />
+<!-- 
+     <TextView 
+	        android:id="@+id/bangongdidian_textview_dz"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textIsSelectable="false"
+	    	android:layout_below="@id/bangongdidian_textview_mc"
+	    	android:text="@string/label_bgdd_addr"/>
+     <TextView 
+	        android:id="@+id/bangongdidian_textview_dh"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/bangongdidian_textview_dz"
+	    	android:textIsSelectable="true"
+	    	android:text="@string/label_bgdd_dh"/>
+     <TextView 
+	        android:id="@+id/bangongdidian_textview_bgsj"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/bangongdidian_textview_dh"
+	    	android:textIsSelectable="false"
+	    	android:text="@string/label_bgdd_bgsj"/>
+ -->
+     
+     <TextView android:id="@+id/bangongdidian_textview_detail"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bangongdidian_textview_mc"
+            android:text="详细内容"
+            android:gravity="bottom"
+            android:paddingRight="10dip"
+            android:scaleType="center"
+            />
+    
+
+</RelativeLayout>
