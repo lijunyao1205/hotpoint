@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search_border_color">#DFDFDF</color>
+   	<drawable name="channel_activity_bg">#D8F0FF</drawable>
+   	<drawable name="channel_normal_bg">#ffffff</drawable>
+</resources>
